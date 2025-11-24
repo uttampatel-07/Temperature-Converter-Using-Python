@@ -1,5 +1,36 @@
-🌡️ Temperature ConverterA simple Python script to convert temperatures between Celsius (°C) and Fahrenheit (°F).🚀 UsageSave the code as a Python file (e.g., temp_converter.py).Run the script in your terminal:Bashpython temp_converter.py
-The script will prompt you to enter the initial unit (C or F) and the temperature value.Conversion Formulas Used:C to F: $F = (C \times 9/5) + 32$F to C: $C = (F - 32) \times 5/9$📜 CodePythonunit = input("Is this temperature in Celsius or Fahrenheit (C/F): ")
+# 🌡️ Simple Temperature Converter
+
+A straightforward Python script for converting temperatures between **Celsius (°C)** and **Fahrenheit (°F)**.
+
+---
+
+## 🚀 How to Use
+
+1.  **Save the Code:** Save the provided Python code into a file named (for example) `temp_converter.py`.
+2.  **Run in Terminal:** Execute the script using your Python interpreter:
+
+    ```bash
+    python temp_converter.py
+    ```
+3.  **Follow Prompts:** The script will ask you to specify the initial unit (**C** or **F**) and the temperature value.
+
+---
+
+##  formulas
+
+The conversions are based on the standard formulas:
+
+* **Celsius to Fahrenheit:**
+    $$F = (C \times 9/5) + 32$$
+* **Fahrenheit to Celsius:**
+    $$C = (F - 32) \times 5/9$$
+
+---
+
+## 📜 Source Code
+
+```python
+unit = input("Is this temperature in Celsius or Fahrenheit (C/F): ")
 temp = float(input("Enter the temperature: "))
 
 if unit == "C":
@@ -10,4 +41,3 @@ elif unit == "F":
     print(f"The temperature in Celsius is: {temp}°C")
 else:
     print(f"{unit} is an invalid unit of measurement")
-✍️ Author
